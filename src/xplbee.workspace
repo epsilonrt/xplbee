@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="xplbee" Database="">
+  <Project Name="xpl_basic_demo" Path="demo/basic/xpl_basic_demo.project" Active="Yes"/>
+  <Project Name="xplbee" Path="xplbee.project" Active="No"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="no">
+      <Environment/>
+      <Project Name="xpl_basic_demo" ConfigName="Debug"/>
+      <Project Name="xplbee" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="xpl_basic_demo" ConfigName="Release"/>
+      <Project Name="xplbee" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

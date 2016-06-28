@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/msl/svn/!svn/ver/27/trunk/src/bootloader/usbkey
+END
+bl-dfu-msl-proto.hex
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/msl/svn/!svn/ver/6/trunk/src/bootloader/usbkey/bl-dfu-msl-proto.hex
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/msl/svn/!svn/ver/27/trunk/src/bootloader/usbkey/Makefile
+END

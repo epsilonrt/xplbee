@@ -1,1 +1,15 @@
-trash
+buildrev.h
+.deps
+*.aws
+*.hex
+*.elf
+*.eep
+*.map
+*.lss
+.codelite
+compile_commands.json
+.clang
+.tern*
+doc/html
+*.LBK
+*.DBK

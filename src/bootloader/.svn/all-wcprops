@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/msl/svn/!svn/ver/27/trunk/src/bootloader
+END
+BootloaderAPI.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/msl/svn/!svn/ver/6/trunk/src/bootloader/BootloaderAPI.c
+END
+BootloaderDFU.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/msl/svn/!svn/ver/6/trunk/src/bootloader/BootloaderDFU.txt
+END
+Descriptors.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/msl/svn/!svn/ver/6/trunk/src/bootloader/Descriptors.h
+END
+BootloaderAPI.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/msl/svn/!svn/ver/6/trunk/src/bootloader/BootloaderAPI.h
+END
+BootloaderDFU.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/msl/svn/!svn/ver/24/trunk/src/bootloader/BootloaderDFU.c
+END
+BootloaderAPITable.S
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/msl/svn/!svn/ver/6/trunk/src/bootloader/BootloaderAPITable.S
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/msl/svn/!svn/ver/17/trunk/src/bootloader/Makefile
+END
+BootloaderDFU.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/msl/svn/!svn/ver/6/trunk/src/bootloader/BootloaderDFU.h
+END
+Descriptors.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/msl/svn/!svn/ver/6/trunk/src/bootloader/Descriptors.c
+END
