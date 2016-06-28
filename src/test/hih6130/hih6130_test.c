@@ -35,7 +35,8 @@
 #include <stdio.h>
 
 /* constants ================================================================ */
-#define TERMINAL_BAUDRATE 115200
+#define TERMINAL_PORT         "tty0"
+#define TERMINAL_BAUDRATE     115200
 
 /* main ===================================================================== */
 int
@@ -49,7 +50,7 @@ main (void) {
 
   // Initialization of the serial port for display
   xSerialIos settings = SERIAL_SETTINGS (TERMINAL_BAUDRATE);
-  FILE * tc = xFileOpen ("tty1", O_RDWR, &settings);
+  FILE * tc = xFileOpen (TERMINAL_PORT, O_WR, &settings);
   stdout = tc;
   sei();
 

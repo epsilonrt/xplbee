@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="xplbee_test" Database="">
-  <Project Name="hih6130_test" Path="hih6130/hih6130_test.project" Active="No"/>
+  <Project Name="hih6130_test" Path="hih6130/hih6130_test.project" Active="Yes"/>
   <Project Name="kernel_test" Path="kernel/kernel_test.project" Active="No"/>
   <Project Name="lcd_test" Path="lcd/lcd_test.project" Active="No"/>
   <Project Name="led_test" Path="led/led_test.project" Active="No"/>
   <Project Name="terminal_test" Path="terminal/terminal_test.project" Active="No"/>
-  <Project Name="xbee_test" Path="xbee/xbee_test.project" Active="Yes"/>
+  <Project Name="xbee_test" Path="xbee/xbee_test.project" Active="No"/>
   <Project Name="gpio_test" Path="gpio/gpio_test.project" Active="No"/>
   <Project Name="xplbee" Path="../xplbee.project" Active="No"/>
   <Project Name="adc_test" Path="adc/adc_test.project" Active="No"/>

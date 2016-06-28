@@ -48,10 +48,9 @@ main (void) {
   uGpioMask outputs = 0, inputs;
 
   xSerialIos settings = SERIAL_SETTINGS (TERMINAL_BAUDRATE);
-  FILE * tc = xFileOpen (TERMINAL_PORT, O_WR | O_NONBLOCK, &settings);
+  FILE * tc = xFileOpen (TERMINAL_PORT, O_WR, &settings);
   stdout = tc;
   stderr = tc;
-  sei();
   
   printf ("\n\nGPIO test\n");
 
