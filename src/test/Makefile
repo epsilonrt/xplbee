@@ -3,8 +3,8 @@
 # This software is governed by the CeCILL license <http://www.cecill.info>    #
 ###############################################################################
 
-SUBDIRS  = adc button gpio hih6130 kernel
-SUBDIRS += lcd led terminal xbee
+SUBDIRS  = adc button gpio hih6130 hsc_spi kernel
+SUBDIRS += lcd led spi terminal tsl230 xbee
 
 all: $(SUBDIRS)
 clean: $(SUBDIRS)

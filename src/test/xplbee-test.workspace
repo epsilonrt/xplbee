@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="xplbee_test" Database="">
-  <Project Name="hih6130_test" Path="hih6130/hih6130_test.project" Active="Yes"/>
+  <Project Name="hih6130_test" Path="hih6130/hih6130_test.project" Active="No"/>
   <Project Name="kernel_test" Path="kernel/kernel_test.project" Active="No"/>
   <Project Name="lcd_test" Path="lcd/lcd_test.project" Active="No"/>
   <Project Name="led_test" Path="led/led_test.project" Active="No"/>
@@ -9,6 +9,9 @@
   <Project Name="gpio_test" Path="gpio/gpio_test.project" Active="No"/>
   <Project Name="xplbee" Path="../xplbee.project" Active="No"/>
   <Project Name="adc_test" Path="adc/adc_test.project" Active="No"/>
+  <Project Name="spi_test" Path="spi/spi_test.project" Active="No"/>
+  <Project Name="hsc_spi_test" Path="hsc_spi/hsc_spi_test.project" Active="No"/>
+  <Project Name="tsl230_test" Path="tsl230/tsl230_test.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="no">
       <Environment/>
@@ -22,6 +25,9 @@
       <Project Name="gpio_test" ConfigName="Debug"/>
       <Project Name="xplbee" ConfigName="Debug"/>
       <Project Name="adc_test" ConfigName="Debug"/>
+      <Project Name="spi_test" ConfigName="Debug"/>
+      <Project Name="hsc_spi_test" ConfigName="Debug"/>
+      <Project Name="tsl230_test" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -35,6 +41,9 @@
       <Project Name="gpio_test" ConfigName="Release"/>
       <Project Name="xplbee" ConfigName="Release"/>
       <Project Name="adc_test" ConfigName="Release"/>
+      <Project Name="spi_test" ConfigName="Release"/>
+      <Project Name="hsc_spi_test" ConfigName="Release"/>
+      <Project Name="tsl230_test" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

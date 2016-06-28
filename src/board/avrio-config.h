@@ -29,5 +29,8 @@
 #define AVRIO_LCD_ENABLE
 #define AVRIO_LCD_BACKLIGHT_ENABLE
 #define AVRIO_TWI_ENABLE
+#define AVRIO_SPI_ENABLE
+#define AVRIO_TSL230_ENABLE
+
 /* ========================================================================== */
 #endif /* _AVRIO_CONFIG_H_ */
