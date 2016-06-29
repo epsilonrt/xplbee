@@ -29,10 +29,10 @@ main (void) {
   uint8_t ucIndex;
   
   xSerialIos settings = SERIAL_SETTINGS (TERMINAL_BAUDRATE);
-  FILE * tc = xFileOpen (TERMINAL_PORT, O_WR | O_NONBLOCK, &settings);
+  settings.flow = SERIAL_FLOW_RTSCTS;
+  FILE * tc = xFileOpen (TERMINAL_PORT, O_WR, &settings);
   stdout = tc;
   stderr = tc;
-  sei();
   
   vLedInit();
   vAdcInit();

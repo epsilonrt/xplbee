@@ -1,5 +1,5 @@
 /*
- * xpl_basic_demo-config.c
+ * xplbee-demo-adc.c
  * >>> Main application, Describe the contents of your file here
  *
  * Copyright © 2016 epsilonRT, All rights reserved.
@@ -12,17 +12,14 @@
  * 
  * The fact that you are presently reading this means that you have had
  * knowledge of the CeCILL license and that you accept its terms.
- *
- * @file
- * @brief
  */
 #include <string.h>
-#include "xpl_basic_demo.h"
+#include "xplbee-demo-adc.h"
 #include "version-git.h"
 
 /* constants ================================================================ */
 /*
- * All definitions are in xpl_basic_demo.h
+ * All definitions are in xplbee-demo-adc.h
  */
 
 /* public variables ========================================================= */
@@ -40,7 +37,7 @@ main (void) {
   vUiInit ();
 
   // Create xPL application and device
-  device = xDeviceCreate (IOLAYER_PORT, IOLAYER_NAME, P3_PILOT_LOG_LEVEL);
+  device = xDeviceCreate (IOLAYER_PORT, IOLAYER_NAME, XPLBEE_ADC_LOG_LEVEL);
   assert (device);
 
   app = gxPLDeviceParent (device);
@@ -94,12 +91,12 @@ xDeviceCreate (const char * iolayerport, const char * iolayername, int log) {
   // Initialize sensor device
   // Create a device for us
   // Create a configurable device and set our application version
-  device = gxPLAppAddConfigurableDevice (app, P3_PILOT_VENDOR_ID,
-                                         P3_PILOT_DEVICE_ID,
+  device = gxPLAppAddConfigurableDevice (app, XPLBEE_ADC_VENDOR_ID,
+                                         XPLBEE_ADC_DEVICE_ID,
                                          gxPLConfigPath ("sensor.xpl"));
   assert (device);
 
-  gxPLDeviceVersionSet (device, P3_PILOT_DEVICE_VERSION);
+  gxPLDeviceVersionSet (device, XPLBEE_ADC_DEVICE_VERSION);
 
   // If the configuration was not reloaded, then this is our first time and
   // we need to define what the configurables are and what the default values

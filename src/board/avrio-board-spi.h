@@ -1,5 +1,14 @@
 /*
- * Licensed under the Apache License, Version 2.0 (the "License")
+ * Copyright © 2016 epsilonRT, All rights reserved.
+ *
+ * This software is governed by the CeCILL license under French law and
+ * abiding by the rules of distribution of free software.  You can  use,
+ * modify and/ or redistribute the software under the terms of the CeCILL
+ * license as circulated by CEA, CNRS and INRIA at the following URL
+ * <http://www.cecill.info>.
+ *
+ * The fact that you are presently reading this means that you have had
+ * knowledge of the CeCILL license and that you accept its terms.
  */
 #ifndef _AVRIO_BOARD_SPI_H_
 #define _AVRIO_BOARD_SPI_H_
@@ -15,9 +24,9 @@
 #define SPI_DDR          DDRB
 #define SPI_PORT         PORTB
 
-#define SPI_VCC_BIT      4
-#define SPI_VCC_DDR      DDRA
-#define SPI_VCC_PORT     PORTA
+#define SPI_VCC_BIT      3
+#define SPI_VCC_DDR      DDRB
+#define SPI_VCC_PORT     PORTB
 
 /* internal public functions ================================================ */
 // -----------------------------------------------------------------------------

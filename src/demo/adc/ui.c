@@ -12,13 +12,9 @@
  * 
  * The fact that you are presently reading this means that you have had
  * knowledge of the CeCILL license and that you accept its terms.
- *
- * @file
- * @brief
  */
 #include <avrio/led.h>
-#include <avrio/button.h>
-#include "p3-pilot.h"
+#include "xplbee-demo-adc.h"
 
 /* macros =================================================================== */
 /* structures =============================================================== */
@@ -33,30 +29,13 @@ void
 vUiInit (void) {
   
   vLedInit();
-  vButInit();
   gxPLStdIoOpen();
 }
 
 // -----------------------------------------------------------------------------
 int
 iUiTask (gxPLDevice * device) {
-#if 0
-  int ret;
 
-  // Sends heartbeat end messages to all devices
-  ret = gxPLAppDisableAllDevices (app);
-  assert (ret == 0);
-
-  gxPLPrintf ("\nPress any key to close...\n");
-  gxPLWait();
-
-  ret = gxPLAppClose (app);
-  assert (ret == 0);
-
-  gxPLMessageDelete (message);
-
-  gxPLPrintf ("\neverything was closed.\nHave a nice day !\n");
-#endif
   return 0;
 }
 

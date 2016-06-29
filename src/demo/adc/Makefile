@@ -4,7 +4,7 @@
 ###############################################################################
 
 # Target Name (without extension).
-TARGET = xpl_basic_demo
+TARGET = xplbee-demo-adc
 
 # Enable logging messages (if OFF no display is performed)
 #LOG = ON
@@ -71,8 +71,6 @@ DISABLE_DELETE_UNUSED_SECTIONS = OFF
 
 # List C source files here. (C dependencies are automatically generated.)
 # all .c files in source/ directory added
-SRC += $(addprefix source/, $(notdir $(wildcard $(PROJECT_TOPDIR)/source/*.c)))
-
 SRC += avrio/adc.c
 
 # List C++ source files here. (C++ dependencies are automatically generated.)
@@ -103,7 +101,7 @@ WARNINGS = all strict-prototypes no-unused-but-set-variable
 #     Each directory must be seperated by a space.
 #     Use forward slashes for directory separators.
 #     For a directory that has spaces, enclose it in quotes.
-EXTRA_INCDIRS =
+EXTRA_INCDIRS = .
 
 #---------------- Library Options ----------------
 # Enable linking with gxPL library (ON/OFF)
@@ -149,4 +147,6 @@ $(error You must set the environment variable GXPL_ROOT)
 endif
 
 include $(GXPL_ROOT)/gxpl.mk
+SRC += $(TARGET).c sensor.c ui.c
+
 include $(GXPL_ROOT)/avrio.mk

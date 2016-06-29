@@ -1,5 +1,5 @@
 /*
- * This file is part of AvrIO.
+ * Copyright © 2016 epsilonRT, All rights reserved.
  *
  * This software is governed by the CeCILL license under French law and
  * abiding by the rules of distribution of free software.  You can  use,

@@ -23,9 +23,6 @@
  * 
  * The fact that you are presently reading this means that you have had
  * knowledge of the CeCILL license and that you accept its terms.
- *
- * @file
- * @brief
  */
 #include <avrio/led.h>
 #include <avrio/delay.h>
@@ -50,9 +47,10 @@ main (void) {
 
   // Initialization of the serial port for display
   xSerialIos settings = SERIAL_SETTINGS (TERMINAL_BAUDRATE);
+  settings.flow = SERIAL_FLOW_RTSCTS;
   FILE * tc = xFileOpen (TERMINAL_PORT, O_WR, &settings);
   stdout = tc;
-  sei();
+  stderr = tc;
 
   printf ("\nHIH6130 Test\n");
 

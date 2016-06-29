@@ -14,14 +14,14 @@
  * 
  * Licensed under the Apache License, Version 2.0 (the "License")
  */
-#include <avrio/led.h>
 #include <avrio/delay.h>
 #include <avrio/tc.h>
 #include <avrio/spi.h>
 #include <avrio/hsc.h>
 
 /* constants ================================================================ */
-#define TERMINAL_BAUDRATE 38400
+#define TERMINAL_PORT         "tty0"
+#define TERMINAL_BAUDRATE     115200
 
 #define SPI_DIV SPI_DIV32 // Fsclk 800 KHz max.
 // 1.6 Bar sensor
@@ -40,13 +40,13 @@ main (void) {
   xHscRaw xRaw;
   xHscValue xValue;
 
-  vLedInit();
   
   // Initialization of the serial port for display
   xSerialIos settings = SERIAL_SETTINGS (TERMINAL_BAUDRATE);
-  FILE * tc = xFileOpen ("tty1", O_RDWR, &settings);
+  settings.flow = SERIAL_FLOW_RTSCTS;
+  FILE * tc = xFileOpen (TERMINAL_PORT, O_WR, &settings);
   stdout = tc;
-  sei();
+  stderr = tc;
   
   // prints the measurement range and the header
   printf ("\nHSC SPI Demo\nP(hPa),T(oC)\n");
@@ -74,9 +74,7 @@ main (void) {
       
       printf ("Sensor Error: %d\n", iError);
     }
-    // Waiting 100 ms and switches LED1
-    delay_ms (100);
-    vLedToggle (LED_LED1);
+    delay_ms (750);
   }
 
   return 0;

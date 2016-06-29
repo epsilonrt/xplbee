@@ -1,5 +1,5 @@
 /*
- * epsirt-pilot.h
+ * xplbee-demo-adc.h
  * >>> Describe the contents of your file here
  *
  * Copyright © 2016 epsilonRT, All rights reserved.
@@ -12,26 +12,25 @@
  * 
  * The fact that you are presently reading this means that you have had
  * knowledge of the CeCILL license and that you accept its terms.
- *
- * @file
- * @brief
  */
-#ifndef _P3_PILOT_HEADER_
-#define _P3_PILOT_HEADER_
+#ifndef _XPLBEE_ADC_HEADER_
+#define _XPLBEE_ADC_HEADER_
 #include <stdlib.h>
 #include <gxPL.h>
 
 /* constants ================================================================ */
-#define P3_PILOT_VENDOR_ID      "epsirt"
-#define P3_PILOT_DEVICE_ID      "sensor"
-#define P3_PILOT_INSTANCE_ID    NULL // NULL for auto instance
-#define P3_PILOT_DEVICE_VERSION VERSION_SHORT // VERSION_SHORT is automatically defined in version-git.h from git describe
-#define P3_PILOT_LOG_LEVEL      LOG_DEBUG
+#define XPLBEE_ADC_VENDOR_ID      "xplbee"
+#define XPLBEE_ADC_DEVICE_ID      "adc"
+#define XPLBEE_ADC_INSTANCE_ID    NULL // NULL for auto instance
+#define XPLBEE_ADC_DEVICE_VERSION VERSION_SHORT // VERSION_SHORT is automatically defined in version-git.h from git describe
+#define XPLBEE_ADC_LOG_LEVEL      LOG_DEBUG
 #define IOLAYER_NAME  "xbeezb"
-#define IOLAYER_PORT  "tty0"
+#define IOLAYER_PORT  "tty1"
 #define SENSOR_GAP    0.1
 #define POLL_RATE_MS  1000
 
+#define SENSOR_ADC_CHAN 0
+#define SENSOR_ADC_FULLSCALE 1.1
 #define SENSOR_NAME "vin"
 #define SENSOR_TYPE "voltage"
 #define SENSOR_GAP_NAME "gap"
@@ -42,7 +41,7 @@
  * the serial port terminal, if NLOG is defined in the makefile,
  * no terminal is used.
  */
-#define AVR_TERMINAL_PORT     "tty1"
+#define AVR_TERMINAL_PORT     "tty0"
 #define AVR_TERMINAL_BAUDRATE 500000
 #define AVR_TERMINAL_FLOW     SERIAL_FLOW_NONE
 #include <gxPL/stdio.h>
@@ -74,4 +73,4 @@ gxPLDevice * xDeviceCreate(const char * iolayerport, const char * iolayername, i
 void vDeviceConfigChanged (gxPLDevice * device, void * udata);
 void vDeviceSetConfig (gxPLDevice * device);
 /* ========================================================================== */
-#endif /* _P3_PILOT_HEADER_ defined */
+#endif /* _XPLBEE_ADC_HEADER_ defined */

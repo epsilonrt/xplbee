@@ -12,14 +12,11 @@
  * 
  * The fact that you are presently reading this means that you have had
  * knowledge of the CeCILL license and that you accept its terms.
- *
- * @file
- * @brief
  */
 #include <math.h>
 #include <string.h>
 #include <avrio/adc.h>
-#include "p3-pilot.h"
+#include "xplbee-demo-adc.h"
 
 /* macros =================================================================== */
 /* constants ================================================================ */
@@ -41,10 +38,10 @@ priSendCurrentValue (gxPLDevice * device, gxPLMessageType msgtype) {
   float current;
 
   // reads ADC5 with averaging over 8 values
-  uint16_t usAdc  = usAdcReadAverage (2, 8);
+  uint16_t usAdc  = usAdcReadAverage (SENSOR_ADC_CHAN, 8);
 
   // converts the ADC value into physical value (ie voltage...)
-  current = ADC_MEASUREMENT (usAdc, ADC5_FULLSCALE);
+  current = ADC_MEASUREMENT (usAdc, SENSOR_ADC_FULLSCALE);
 
   if (msgtype == gxPLMessageTrigger) {
     /*
