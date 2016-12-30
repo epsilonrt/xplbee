@@ -4,14 +4,14 @@
   <Project Name="kernel_test" Path="kernel/kernel_test.project" Active="No"/>
   <Project Name="lcd_test" Path="lcd/lcd_test.project" Active="No"/>
   <Project Name="led_test" Path="led/led_test.project" Active="No"/>
-  <Project Name="terminal_test" Path="terminal/terminal_test.project" Active="No"/>
+  <Project Name="terminal_test" Path="terminal/terminal_test.project" Active="Yes"/>
   <Project Name="xbee_test" Path="xbee/xbee_test.project" Active="No"/>
   <Project Name="gpio_test" Path="gpio/gpio_test.project" Active="No"/>
   <Project Name="xplbee" Path="../xplbee.project" Active="No"/>
   <Project Name="adc_test" Path="adc/adc_test.project" Active="No"/>
   <Project Name="spi_test" Path="spi/spi_test.project" Active="No"/>
   <Project Name="hsc_spi_test" Path="hsc_spi/hsc_spi_test.project" Active="No"/>
-  <Project Name="tsl230_test" Path="tsl230/tsl230_test.project" Active="Yes"/>
+  <Project Name="tsl230_test" Path="tsl230/tsl230_test.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="no">
       <Environment/>

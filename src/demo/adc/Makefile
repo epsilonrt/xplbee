@@ -7,7 +7,7 @@
 TARGET = xplbee-demo-adc
 
 # Enable logging messages (if OFF no display is performed)
-#LOG = ON
+LOG = ON
 
 # Relative path from the root directory of the user's project
 PROJECT_TOPDIR = ../..

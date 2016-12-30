@@ -31,8 +31,6 @@ extern "C" {
 #define DEFAULT_XBEE_PORT                 "tty1"
 // AVR only, config store in EEPROM
 #define DEFAULT_CONFIG_SIZE_MAX           512
-//#define DEFAULT_XBEE_RESET_PORT           PORTB
-//#define DEFAULT_XBEE_RESET_PIN            7
 
 /* build options ============================================================ */
 #define CONFIG_DEVICE_CONFIGURABLE    1
@@ -40,9 +38,6 @@ extern "C" {
 #define CONFIG_DEVICE_FILTER          1
 // add the "remote-addr" field in hbeat.basic
 #define CONFIG_HBEAT_BASIC_EXTENSION  1
-// XBEE
-//#define CONFIG_XBEE_RESET_PORT        PORTD
-//#define CONFIG_XBEE_RESET_PIN         4
 
 /* conditionals options ====================================================== */
 

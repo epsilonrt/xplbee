@@ -3,12 +3,12 @@
   <Project Name="xplbee" Path="xplbee.project" Active="No"/>
   <Project Name="xplbee-demo-adc" Path="demo/adc/xplbee-demo-adc.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="no">
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="xplbee" ConfigName="Debug"/>
       <Project Name="xplbee-demo-adc" ConfigName="Debug"/>
     </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Release" Selected="yes">
+    <WorkspaceConfiguration Name="Release" Selected="no">
       <Environment/>
       <Project Name="xplbee" ConfigName="Release"/>
       <Project Name="xplbee-demo-adc" ConfigName="Release"/>

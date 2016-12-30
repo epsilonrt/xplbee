@@ -2,21 +2,27 @@
 # Copyright © 2016 epsilonRT, All rights reserved.                            #
 # This software is governed by the CeCILL license <http://www.cecill.info>    #
 ###############################################################################
-#SUBDIRS = bootloader demo
-CLEANER_SUBDIRS = test demo
+
+SUBDIRS  = adc
 
 all: $(SUBDIRS)
-clean: $(SUBDIRS) $(CLEANER_SUBDIRS)
-distclean: $(SUBDIRS) $(CLEANER_SUBDIRS) 
+clean: $(SUBDIRS)
+distclean: $(SUBDIRS)
 rebuild: $(SUBDIRS)
+lib: $(SUBDIRS)
+cleanlib: $(SUBDIRS)
+extcoff: $(SUBDIRS)
+program: $(SUBDIRS)
+debug: $(SUBDIRS)
 
+elf: $(SUBDIRS)
+hex: $(SUBDIRS)
+eep: $(SUBDIRS)
+lss: $(SUBDIRS)
+sym: $(SUBDIRS)
+har: $(SUBDIRS)
 
 $(SUBDIRS):
 	$(MAKE) -w -C $@ $(MAKECMDGOALS)
 
-$(CLEANER_SUBDIRS):
-	$(MAKE) -w -C $@ $(MAKECMDGOALS)
-	
-
-.PHONY: all clean distclean rebuild $(SUBDIRS) $(CLEANER_SUBDIRS)
-
+.PHONY: all clean distclean rebuild lib cleanlib extcoff program debug elf hex eep lss sym har $(SUBDIRS)
