@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="xplbee-demo-adc" InternalType="">
+<CodeLite_Project Name="package_xplbee" InternalType="">
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
@@ -125,13 +125,12 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="xplbee-demo-adc">
-    <File Name="Makefile"/>
-    <File Name="xplbee-demo-adc.h"/>
-    <File Name="sensor.c"/>
-    <File Name="ui.c"/>
-    <File Name="xplbee-demo-adc.c"/>
-  </VirtualDirectory>
   <Dependencies Name="Debug"/>
   <Dependencies Name="Release"/>
+  <VirtualDirectory Name="bootloader">
+    <File Name="Makefile"/>
+    <File Name="boards-1.6.txt"/>
+    <File Name="package_xplbee_xplbee-additional_index.json.TEMPLATE"/>
+    <File Name="release.sh"/>
+  </VirtualDirectory>
 </CodeLite_Project>

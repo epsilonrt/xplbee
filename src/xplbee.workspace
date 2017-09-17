@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="xplbee" Database="">
+  <Project Name="xplbee-demo-adc" Path="demo/adc/xplbee-demo-adc.project" Active="No"/>
   <Project Name="xplbee" Path="xplbee.project" Active="No"/>
-  <Project Name="xplbee-demo-adc" Path="demo/adc/xplbee-demo-adc.project" Active="Yes"/>
+  <Project Name="xplbee_bootloader" Path="arduino/bootloader/optiboot/xplbee_bootloader.project" Active="No"/>
+  <Project Name="package_xplbee" Path="arduino/bootloader/package_xplbee.project" Active="Yes"/>
   <BuildMatrix>
-    <WorkspaceConfiguration Name="Debug" Selected="yes">
+    <WorkspaceConfiguration Name="Debug" Selected="no">
       <Environment/>
-      <Project Name="xplbee" ConfigName="Debug"/>
       <Project Name="xplbee-demo-adc" ConfigName="Debug"/>
+      <Project Name="xplbee" ConfigName="Debug"/>
+      <Project Name="xplbee_bootloader" ConfigName="Debug"/>
+      <Project Name="package_xplbee" ConfigName="Debug"/>
     </WorkspaceConfiguration>
-    <WorkspaceConfiguration Name="Release" Selected="no">
+    <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
-      <Project Name="xplbee" ConfigName="Release"/>
       <Project Name="xplbee-demo-adc" ConfigName="Release"/>
+      <Project Name="xplbee" ConfigName="Release"/>
+      <Project Name="xplbee_bootloader" ConfigName="Release"/>
+      <Project Name="package_xplbee" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

@@ -67,34 +67,33 @@ EXTMEMOPTS =
 # !! You must change and enable the setting below to match your programmer !!
 
 # AVR Dragon ISP
-#AVRDUDE_PROGRAMMER = dragon_isp
-#AVRDUDE_PORT = usb
+#AVRDUDE_PROGRAMMER ?= dragon_isp
+#AVRDUDE_PORT ?= usb
 
 # AVR Dragon JTAG
-AVRDUDE_PROGRAMMER = dragon_jtag
-AVRDUDE_PORT = usb
-AVARICE_OPT = --dragon 
+AVRDUDE_PROGRAMMER ?= dragon_jtag
+AVRDUDE_PORT ?= usb
+AVARICE_OPT ?= --dragon 
 
 # JTAG ICE MkII
 #AVRDUDE_PROGRAMMER  = jtag2
-#AVRDUDE_PORT = usb
-#AVARICE_OPT = --mkII
+#AVRDUDE_PORT ?= usb
+#AVARICE_OPT ?= --mkII
 
 # Arduino OnBoard Programmer
-#AVRDUDE_PROGRAMMER = arduino
-#AVRDUDE_PORT = /dev/ttyACM0
-#AVRDUDE_PORT = COM4
+#AVRDUDE_PROGRAMMER ?= arduino
+#AVRDUDE_PORT ?= /dev/ttyACM0
+#AVRDUDE_PORT ?= COM4
 
 # STK200 programmer on parallel port
-#AVRDUDE_PROGRAMMER = stk200
-#AVRDUDE_PORT = lpt1
+#AVRDUDE_PROGRAMMER ?= stk200
+#AVRDUDE_PORT ?= lpt1
 
 # Fuses and lock for fuse target
-# !! You may change the following setting to match your target board !!
-AVRDUDE_LFUSE = 0xEF
-AVRDUDE_HFUSE = 0xB9
-AVRDUDE_EFUSE = 0xFF
-#AVRDUDE_LOCK  = 0xFF
+AVRDUDE_LFUSE ?= 0xF7
+AVRDUDE_HFUSE ?= 0x1E
+AVRDUDE_EFUSE ?= 0xFD
+AVRDUDE_LOCK  ?= 0xEF
 
 # Set the DEBUG_UI to either gdb or insight.
 #DEBUG_UI = gdb
