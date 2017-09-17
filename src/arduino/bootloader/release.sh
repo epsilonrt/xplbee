@@ -1,6 +1,6 @@
-#%/bin/bash
+#!/bin/bash
 #
-# Use like: "sh release.sh <versionno>"
+# Use like: "release.sh <versionno>"
 #
 # Build a "release" .zip file for xPLBee bootloader
 # Run from the build directory
@@ -62,7 +62,7 @@ cp *.hex $TOP/bootloaders/xplbee
 pushd /tmp/xplbee-release
 zip -r xplbee.zip xplbee
 HASH=`openssl dgst -sha256 xplbee.zip | sed -e 's/.* //'`
-SIZE=`stat -f %z xplbee.zip`
+SIZE=`stat -c %s xplbee.zip`
 popd
 sed -e "s/#.*//" -e "s/%HASH%/$HASH/" -e "s/%VERSION%/$1/" -e "s/%SIZE%/$SIZE/" package_xplbee_xplbee-additional_index.json.TEMPLATE > /tmp/xplbee-release/package_xplbee_xplbee-additional_index.json
 
