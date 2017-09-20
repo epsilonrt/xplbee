@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="xplbee" Database="">
+<CodeLite_Workspace Name="xplbee" Database="" Version="10.0.0">
   <Project Name="xpl_basic_demo" Path="demo/basic/xpl_basic_demo.project" Active="Yes"/>
   <Project Name="xplbee" Path="xplbee.project" Active="No"/>
   <BuildMatrix>
