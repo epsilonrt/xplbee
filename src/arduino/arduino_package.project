@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="arduino_package" InternalType="" Version="10.0.0">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+    <Plugin Name="CMakePlugin">
+      <![CDATA[[{
+  "name": "Debug",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }, {
+  "name": "Release",
+  "enabled": false,
+  "buildDirectory": "build",
+  "sourceDirectory": "$(ProjectPath)",
+  "generator": "",
+  "buildType": "",
+  "arguments": [],
+  "parentProject": ""
+ }]]]>
+    </Plugin>
+  </Plugins>
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Executable">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="Cross GCC ( avr )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="no" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <Target Name="Tar">make tar</Target>
+        <Target Name="Package">make package</Target>
+        <Target Name="DistClean">make distclean</Target>
+        <RebuildCommand>make rebuild</RebuildCommand>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make DEBUG=ON</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(ProjectPath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="Cross GCC ( avr )" DebuggerType="GNU gdb debugger" Type="Executable" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" PCHFlags="" PCHFlagsPolicy="0">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="no" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="" IsExtended="no">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <Target Name="Tar">make tar</Target>
+        <Target Name="Package">make package</Target>
+        <Target Name="Distclean">make distclean</Target>
+        <RebuildCommand>make rebuild</RebuildCommand>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(ProjectPath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
+  <VirtualDirectory Name="arduino">
+    <File Name="LICENSE"/>
+    <File Name="Makefile"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="xplbee">
+    <VirtualDirectory Name="variants">
+      <VirtualDirectory Name="standard">
+        <File Name="xplbee/variants/standard/pins_arduino.h"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="libraries">
+      <VirtualDirectory Name="Ethernet">
+        <VirtualDirectory Name="src">
+          <VirtualDirectory Name="utility">
+            <File Name="xplbee/libraries/Ethernet/src/utility/util.h"/>
+            <File Name="xplbee/libraries/Ethernet/src/utility/w5100.cpp"/>
+            <File Name="xplbee/libraries/Ethernet/src/utility/socket.h"/>
+            <File Name="xplbee/libraries/Ethernet/src/utility/socket.cpp"/>
+            <File Name="xplbee/libraries/Ethernet/src/utility/w5100.h"/>
+          </VirtualDirectory>
+          <File Name="xplbee/libraries/Ethernet/src/Dns.cpp"/>
+          <File Name="xplbee/libraries/Ethernet/src/EthernetServer.h"/>
+          <File Name="xplbee/libraries/Ethernet/src/Ethernet.h"/>
+          <File Name="xplbee/libraries/Ethernet/src/EthernetUdp.h"/>
+          <File Name="xplbee/libraries/Ethernet/src/Dns.h"/>
+          <File Name="xplbee/libraries/Ethernet/src/Ethernet.cpp"/>
+          <File Name="xplbee/libraries/Ethernet/src/Dhcp.cpp"/>
+          <File Name="xplbee/libraries/Ethernet/src/EthernetClient.cpp"/>
+          <File Name="xplbee/libraries/Ethernet/src/EthernetUdp.cpp"/>
+          <File Name="xplbee/libraries/Ethernet/src/Dhcp.h"/>
+          <File Name="xplbee/libraries/Ethernet/src/EthernetClient.h"/>
+          <File Name="xplbee/libraries/Ethernet/src/EthernetServer.cpp"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/Ethernet/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Optiboot_flasher">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/Optiboot_flasher/src/optiboot.h"/>
+        </VirtualDirectory>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Timer">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/Timer/src/Event.cpp"/>
+          <File Name="xplbee/libraries/Timer/src/Event.h"/>
+          <File Name="xplbee/libraries/Timer/src/Timer.h"/>
+          <File Name="xplbee/libraries/Timer/src/Timer.cpp"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/Timer/Readme.txt"/>
+        <File Name="xplbee/libraries/Timer/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Servo">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/Servo/src/ServoTimers.h"/>
+          <File Name="xplbee/libraries/Servo/src/Servo.cpp"/>
+          <File Name="xplbee/libraries/Servo/src/Servo.h"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/Servo/README.txt"/>
+        <File Name="xplbee/libraries/Servo/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SD">
+        <VirtualDirectory Name="src">
+          <VirtualDirectory Name="utility">
+            <File Name="xplbee/libraries/SD/src/utility/Sd2PinMap.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/SdFat.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/SdFile.cpp"/>
+            <File Name="xplbee/libraries/SD/src/utility/SdInfo.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/SdFatmainpage.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/SdVolume.cpp"/>
+            <File Name="xplbee/libraries/SD/src/utility/Sd2Card.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/SdFatUtil.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/FatStructs.h"/>
+            <File Name="xplbee/libraries/SD/src/utility/Sd2Card.cpp"/>
+          </VirtualDirectory>
+          <File Name="xplbee/libraries/SD/src/SD.h"/>
+          <File Name="xplbee/libraries/SD/src/File.cpp"/>
+          <File Name="xplbee/libraries/SD/src/README.txt"/>
+          <File Name="xplbee/libraries/SD/src/SD.cpp"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/SD/README.txt"/>
+        <File Name="xplbee/libraries/SD/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SoftwareSerial">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/SoftwareSerial/src/SoftwareSerial.h"/>
+          <File Name="xplbee/libraries/SoftwareSerial/src/SoftwareSerial.cpp"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/SoftwareSerial/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="SPI">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/SPI/src/SPI.h"/>
+          <File Name="xplbee/libraries/SPI/src/SPI.cpp"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/SPI/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="Wire">
+        <VirtualDirectory Name="utility">
+          <File Name="xplbee/libraries/Wire/utility/twi.c"/>
+          <File Name="xplbee/libraries/Wire/utility/twi.h"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/Wire/Wire.h"/>
+        <File Name="xplbee/libraries/Wire/keywords.txt"/>
+        <File Name="xplbee/libraries/Wire/Wire.cpp"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="AVR_examples">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/AVR_examples/src/AVR_keywords.h"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/AVR_examples/Readme.txt"/>
+        <File Name="xplbee/libraries/AVR_examples/keywords.txt"/>
+      </VirtualDirectory>
+      <VirtualDirectory Name="EEPROM">
+        <VirtualDirectory Name="src">
+          <File Name="xplbee/libraries/EEPROM/src/EEPROM.h"/>
+        </VirtualDirectory>
+        <File Name="xplbee/libraries/EEPROM/keywords.txt"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <VirtualDirectory Name="cores">
+      <VirtualDirectory Name="MightyCore">
+        <VirtualDirectory Name="avr-libc">
+          <File Name="xplbee/cores/MightyCore/avr-libc/stdlib_private.h"/>
+          <File Name="xplbee/cores/MightyCore/avr-libc/malloc.c"/>
+          <File Name="xplbee/cores/MightyCore/avr-libc/realloc.c"/>
+          <File Name="xplbee/cores/MightyCore/avr-libc/sectionname.h"/>
+        </VirtualDirectory>
+        <File Name="xplbee/cores/MightyCore/IPAddress.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Stream.cpp"/>
+        <File Name="xplbee/cores/MightyCore/wiring_private.h"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial.h"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial0.cpp"/>
+        <File Name="xplbee/cores/MightyCore/new.h"/>
+        <File Name="xplbee/cores/MightyCore/HID.cpp"/>
+        <File Name="xplbee/cores/MightyCore/hooks.c"/>
+        <File Name="xplbee/cores/MightyCore/WCharacter.h"/>
+        <File Name="xplbee/cores/MightyCore/binary.h"/>
+        <File Name="xplbee/cores/MightyCore/wiring_extras.cpp"/>
+        <File Name="xplbee/cores/MightyCore/USBCore.h"/>
+        <File Name="xplbee/cores/MightyCore/IPAddress.h"/>
+        <File Name="xplbee/cores/MightyCore/main.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Arduino.h"/>
+        <File Name="xplbee/cores/MightyCore/wiring_extras.h"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial2.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Client.h"/>
+        <File Name="xplbee/cores/MightyCore/Udp.h"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial_private.h"/>
+        <File Name="xplbee/cores/MightyCore/PluggableUSB.cpp"/>
+        <File Name="xplbee/cores/MightyCore/wiring_shift.c"/>
+        <File Name="xplbee/cores/MightyCore/WString.h"/>
+        <File Name="xplbee/cores/MightyCore/wiring_pulse.c"/>
+        <File Name="xplbee/cores/MightyCore/USBCore.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Tone.cpp"/>
+        <File Name="xplbee/cores/MightyCore/new.cpp"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial.cpp"/>
+        <File Name="xplbee/cores/MightyCore/WInterrupts.c"/>
+        <File Name="xplbee/cores/MightyCore/abi.cpp"/>
+        <File Name="xplbee/cores/MightyCore/USBAPI.h"/>
+        <File Name="xplbee/cores/MightyCore/WMath.cpp"/>
+        <File Name="xplbee/cores/MightyCore/wiring_analog.c"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial1.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Print.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Printable.h"/>
+        <File Name="xplbee/cores/MightyCore/WString.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Server.h"/>
+        <File Name="xplbee/cores/MightyCore/wiring_digital.c"/>
+        <File Name="xplbee/cores/MightyCore/Platform.h"/>
+        <File Name="xplbee/cores/MightyCore/PluggableUSB.h"/>
+        <File Name="xplbee/cores/MightyCore/HardwareSerial3.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Print.h"/>
+        <File Name="xplbee/cores/MightyCore/USBDesc.h"/>
+        <File Name="xplbee/cores/MightyCore/CDC.cpp"/>
+        <File Name="xplbee/cores/MightyCore/Stream.h"/>
+        <File Name="xplbee/cores/MightyCore/wiring.c"/>
+      </VirtualDirectory>
+    </VirtualDirectory>
+    <File Name="xplbee/Makefile"/>
+    <File Name="xplbee/boards.txt"/>
+    <File Name="xplbee/programmers.txt"/>
+    <File Name="xplbee/platform.txt"/>
+    <File Name="xplbee/externalprogrammers.txt"/>
+  </VirtualDirectory>
+</CodeLite_Project>

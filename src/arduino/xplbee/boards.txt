@@ -1,0 +1,55 @@
+################################################################################
+## This file is created by epsilonrt for use with MightyCore
+## https://github.com/epsilonrt/xplbee
+##
+## This is the file where fuse settings, BOD options and compiler flags are located.
+################################################################################
+
+# Menu options
+menu.BOD=BOD
+menu.LTO=Compiler LTO
+
+################################################################################
+
+xplbee.name=xPLBee
+xplbee.upload.tool=avrdude
+xplbee.upload.protocol=arduino
+xplbee.upload.maximum_size=130048
+xplbee.upload.maximum_data_size=16384
+xplbee.upload.speed=115200
+
+xplbee.bootloader.tool=avrdude
+xplbee.bootloader.unlock_bits=0x3f
+xplbee.bootloader.lock_bits=0x0f
+xplbee.bootloader.low_fuses=0xf7
+xplbee.bootloader.high_fuses=0x1e
+xplbee.bootloader.file=xplbee_bootloader.hex
+
+xplbee.build.mcu=atmega1284p
+xplbee.build.board=xplbee
+xplbee.build.core=MightyCore
+xplbee.build.f_cpu=16000000L
+xplbee.build.variant=standard
+
+# Brown out detection
+xplbee.menu.BOD.2v7=2.7v
+xplbee.menu.BOD.2v7.bootloader.extended_fuses=0xfd
+xplbee.menu.BOD.4v3=4.3v
+xplbee.menu.BOD.4v3.bootloader.extended_fuses=0xfc
+xplbee.menu.BOD.1v8=1.8v
+xplbee.menu.BOD.1v8.bootloader.extended_fuses=0xfe
+xplbee.menu.BOD.disabled=Disabled
+xplbee.menu.BOD.disabled.bootloader.extended_fuses=0xff
+
+# Compiler link time optimization
+xplbee.menu.LTO.Os=Disabled (default)
+xplbee.menu.LTO.Os.compiler.c.extra_flags=
+xplbee.menu.LTO.Os.compiler.c.elf.extra_flags=
+xplbee.menu.LTO.Os.compiler.cpp.extra_flags=
+xplbee.menu.LTO.Os.ltoarcmd=avr-ar
+
+xplbee.menu.LTO.Os_flto=Enabled
+xplbee.menu.LTO.Os_flto.compiler.c.extra_flags=-Wextra -flto
+xplbee.menu.LTO.Os_flto.compiler.c.elf.extra_flags=-w -flto
+xplbee.menu.LTO.Os_flto.compiler.cpp.extra_flags=-Wextra -flto
+xplbee.menu.LTO.Os_flto.ltoarcmd=avr-gcc-ar

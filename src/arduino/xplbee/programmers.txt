@@ -1,0 +1,37 @@
+dragon_isp.name=Atmel AVR Dragon in ISP mode
+dragon_isp.communication=usb
+dragon_isp.protocol=dragon_isp
+dragon_isp.program.protocol=dragon_isp
+dragon_isp.program.tool=avrdude
+dragon_isp.program.extra_params=-Pusb
+
+dragon_jtag.name=Atmel AVR Dragon in JTAG mode
+dragon_jtag.communication=usb
+dragon_jtag.protocol=dragon_jtag
+dragon_jtag.program.protocol=dragon_jtag
+dragon_jtag.program.tool=avrdude
+dragon_jtag.program.extra_params=-Pusb
+
+atmelice.name=Atmel-ICE (ARM/AVR) in JTAG mode
+atmelice.communication=usb
+atmelice.protocol=atmelice
+atmelice.program.protocol=atmelice
+atmelice.program.tool=avrdude
+atmelice.program.extra_params=-Pusb
+
+jtag2isp.name=Atmel JTAG ICE mkII in ISP mode
+jtag2isp.communication=usb
+jtag2isp.protocol=jtag2isp
+jtag2isp.program.protocol=jtag2isp
+jtag2isp.program.tool=avrdude
+jtag2isp.program.extra_params=
+
+jtag2.name=Atmel JTAG ICE mkII in JTAG mode
+jtag2.communication=usb
+jtag2.protocol=jtag2
+jtag2.program.protocol=jtag2
+jtag2.program.tool=avrdude
+# Set a bitclock of 0.1us (the fastest supported value). This should
+# work regardless of the crystal used, since JTAG doesn't use the MCU
+# clock but dictates its own clock.
+jtag2.program.extra_params=-B0.1
