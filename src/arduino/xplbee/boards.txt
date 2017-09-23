@@ -19,7 +19,7 @@ xplbee.upload.maximum_data_size=16384
 xplbee.upload.speed=115200
 
 xplbee.bootloader.tool=avrdude
-xplbee.bootloader.unlock_bits=0x3f
+xplbee.bootloader.unlock_bits=0xff
 xplbee.bootloader.lock_bits=0x0f
 xplbee.bootloader.low_fuses=0xf7
 xplbee.bootloader.high_fuses=0x1e

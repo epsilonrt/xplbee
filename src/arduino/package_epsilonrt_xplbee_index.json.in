@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "name": "xplbee",
+      "name": "xPLBee @VERSION@",
       "maintainer": "epsilonrt",
       "websiteURL": "https://github.com/epsilonrt/xplbee",
       "email": "epsilonrt@gmail.com",
@@ -10,11 +10,11 @@
       },
       "platforms": [
         {
-          "name": "xplbee",
+          "name": "xPLBee",
           "architecture": "avr",
           "version": "@VERSION@",
           "category": "Contributed",
-          "url": "https://github.com/epsilonrt/xplbee/releases/download/v@VERSION@/xplbee.tar.gz",
+          "url": "https://github.com/epsilonrt/xplbee/releases/download/v@VERSION_TINY@/xplbee.tar.gz",
           "archiveFileName": "xplbee.tar.gz",
           "checksum": "SHA-256:@HASH@",
           "size": "@SIZE@",
@@ -25,7 +25,7 @@
             {
               "packager": "arduino",
               "name": "avrdude",
-              "version": "6.0.1-arduino5"
+              "version": "6.3.0-arduino9"
             }
           ]
         }

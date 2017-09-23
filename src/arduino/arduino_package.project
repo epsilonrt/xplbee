@@ -126,6 +126,7 @@
   <VirtualDirectory Name="arduino">
     <File Name="LICENSE"/>
     <File Name="Makefile"/>
+    <File Name="package_epsilonrt_xplbee_index.json.in"/>
   </VirtualDirectory>
   <VirtualDirectory Name="xplbee">
     <VirtualDirectory Name="variants">
@@ -298,7 +299,6 @@
         <File Name="xplbee/cores/MightyCore/wiring.c"/>
       </VirtualDirectory>
     </VirtualDirectory>
-    <File Name="xplbee/Makefile"/>
     <File Name="xplbee/boards.txt"/>
     <File Name="xplbee/programmers.txt"/>
     <File Name="xplbee/platform.txt"/>
